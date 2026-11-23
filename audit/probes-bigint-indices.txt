@@ -1,0 +1,15 @@
+CONTROL_valid_def                  | kernel ACCEPTED | twin ACCEPTED | 
+P1_nested_negative_via_List        | kernel rejected | twin rejected | Kernel: strict positivity violation (non-positive occurrence
+P2_large_field_small_universe      | kernel rejected | twin rejected | Kernel: universe violation in ctor EdU2.mk field 0
+P3_type_in_type_def                | kernel rejected | twin rejected | Kernel: definition body type mismatch for edTT
+CONTROL_1plus1_eq_2                | kernel ACCEPTED | twin ACCEPTED | 
+P4_nat_accel_forgery_1plus1_eq_3   | kernel rejected | twin rejected | Kernel: definition body type mismatch for edBad4
+CONTROL_prim_closed_5minus1_eq_4   | kernel ACCEPTED | twin ACCEPTED | 
+P11_prim_open_truncation_forgery   | kernel rejected | twin rejected | Cannot mix BigInt and other types, use explicit conversions
+P12_btGet_forgery_entry0           | kernel rejected | twin rejected | Kernel: definition body type mismatch for edBad12
+P5_negative_literal                | kernel rejected | twin rejected | Kernel: negative NatLit
+P6_ctor_returns_other_type         | kernel rejected | twin rejected | Kernel: ctor EdBad6.mk must return EdBad6
+P7_wrong_level_arity               | kernel rejected | twin rejected | Kernel: universe arity mismatch for List
+P8_nonuniform_param_recursion      | kernel rejected | twin rejected | Cannot mix BigInt and other types, use explicit conversions
+P9_redeclare_Nat                   | kernel rejected | twin rejected | Kernel: duplicate declaration Nat
+P10_old_malformed                  | kernel rejected | twin rejected | Kernel: argument type mismatch in App

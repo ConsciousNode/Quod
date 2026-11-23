@@ -1,0 +1,10 @@
+const { load } = require('./load.cjs'); const q = load(); const fs = require('fs');
+let t = Date.now(); const { kenv } = q.QuodApp.buildFullLibrary(false); const kms = Date.now() - t;
+console.log('kernel decls', kenv.order.length, 'axioms', kenv.axioms.size, 'ms', kms);
+const exp = kenv.exportAll(); fs.writeFileSync('export.sexp', exp);
+t = Date.now(); const tenv = new q.Twin.TwinEnv(); tenv.loadByteTable('alu.bin', new Uint8Array(fs.readFileSync('/home/claude/consciousnode/Triton-card-computer/roms/alu.bin')));
+const tres = tenv.checkExportText(exp, q.lexSexp); console.log('twin checked', tres.length, 'ms', Date.now() - t);
+console.log('in-page suite:', JSON.stringify(q.QuodTests.runInPageSuite()));
+const names = kenv.order.map(n => typeof n === 'string' ? n : n.name);
+fs.writeFileSync('decls.txt', names.join('\n'));
+console.log('showcase decls:', names.filter(n => /showcase/.test(n)).join(', '));

@@ -1,0 +1,2 @@
+kernel decls 303 axioms 0 ms 8831
+twin checked 303 ms 6689

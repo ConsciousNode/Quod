@@ -1,0 +1,1 @@
+boards 300  mismatching 0  dead cells found by oracle search 45497

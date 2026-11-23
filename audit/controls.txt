@@ -1,0 +1,3 @@
+negative inductive       | switch off: rejected (Kernel: strict positivity violation (negative occurrence of ) | switch on: ACCEPTED
+Type : Type def          | switch off: rejected (Kernel: definition body type mismatch for tt) | switch on: ACCEPTED
+large field in Type 0    | switch off: rejected (Kernel: universe violation in ctor U.mk field 0) | switch on: ACCEPTED

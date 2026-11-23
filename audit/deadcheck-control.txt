@@ -1,0 +1,2 @@
+boards 300  mismatching 65  dead cells found by oracle search 45963
+first mismatch {"mode":"NORMAL","level":1,"onlyOracle":["18,1","19,0","19,1","19,2","20,0"],"onlyTheirs":[]}

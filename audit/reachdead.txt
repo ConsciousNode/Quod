@@ -1,0 +1,8 @@
+EMPTY board, corrected definition: dead = 0
+cell 24,0: first dead at out_39.json
+cell 26,4: first dead at out_13.json
+cell 25,1: first dead at out_17.json
+cell 23,11: first dead at out_37.json
+cell 27,11: first dead at out_6.json
+cell 23,6: first dead at out_113.json
+all cells ever marked: 15

@@ -1,0 +1,1 @@
+{"mutants":5000,"kernelAccepted":489,"kernelRejected":4511,"disagreements":0,"noopSkipped":0,"kinds":{"level":964,"var+":3658,"swap":280,"const":98}}
